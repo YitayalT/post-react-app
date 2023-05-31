@@ -1,14 +1,13 @@
 
+import classes from './Post.module.css';
 
-import './post.css'
-const Post = ({title, lecture}) => {
-
+function Post(props) {
   return (
-   <div className="card">
-    <h4>The title of the course is: {title}</h4>
-    <h3>The lecture of <i>{title} </i> is {lecture}</h3>
-   </div>
-  )
+    <li className={classes.post}>
+      <p className={classes.author}>{props.author}</p>
+      <p className={classes.text}>{props.body}</p>
+    </li>
+  );
 }
 
-export default Post
+export default Post;
