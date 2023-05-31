@@ -7,6 +7,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
     <App />
-    <Post />
+    <Post title = "React Js" lecture = "Maximillian" />
+    <Post title = "Ract Native" lecture = "Mosh"/>
+    <Post title = "Css crash course" lecture = "Brad Traversy"/>
   </>
 );

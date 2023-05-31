@@ -1,10 +1,13 @@
 
 
-const names = ['Abebe', 'Belete'];
-const Post = () => {
-    const name = Math.random() > 0.5 ? names[0] : names[1];
+import './post.css'
+const Post = ({title, lecture}) => {
+
   return (
-    <div>{name}</div>
+   <div className="card">
+    <h4>The title of the course is: {title}</h4>
+    <h3>The lecture of <i>{title} </i> is {lecture}</h3>
+   </div>
   )
 }
 
